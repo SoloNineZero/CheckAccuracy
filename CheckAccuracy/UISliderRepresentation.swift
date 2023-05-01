@@ -18,7 +18,6 @@ struct UISliderRepresentation: UIViewRepresentable {
         slider.minimumValue = 0
         slider.maximumValue = 100
         slider.thumbTintColor = .red
-        
         slider.addTarget(
             context.coordinator,
             action: #selector(Coordinator.changeValue(_:)),

@@ -29,7 +29,7 @@ struct ContentView: View {
                 Alert(
                     title: Text("Твой счёт"),
                     message: Text(computeScore().rounded().formatted()),
-                    dismissButton: .default(Text("OK")))
+                    dismissButton: .default(Text("Ok")))
             }
             
             Button("Начать заново") {
