@@ -20,15 +20,18 @@ struct ContentView: View {
             }
             HStack {
                 Text("0")
-                Slider(value: $currentValue, in: 0...100, step: 1)
+                UISliderRepresentation(value: $currentValue)
                 Text("100")
             }
             
             Button("Проверь меня") {
-                
+                showAlert.toggle()
             }
-            .alert("Твой счёт", isPresented: $showAlert, actions: {}) {
-                Text("\(targetValue)")
+            .alert(isPresented: $showAlert) {
+                Alert(
+                    title: Text("Твой счёт"),
+                    message: Text(computeScore().rounded().formatted()),
+                    dismissButton: .default(Text("OK")))
             }
             
             Button("Начать заново") {
@@ -40,8 +43,8 @@ struct ContentView: View {
     }
     
     private func computeScore() -> Double {
-        let difference = targetValue - currentValue
-        return 100 - difference
+        let difference = abs(Int(targetValue) - lround(currentValue))
+        return Double(100 - difference)
     }
 }
 

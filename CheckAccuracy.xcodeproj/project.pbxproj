@@ -11,6 +11,7 @@
 		A8135F3A29FFB23A006C4156 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8135F3929FFB23A006C4156 /* ContentView.swift */; };
 		A8135F3C29FFB23B006C4156 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8135F3B29FFB23B006C4156 /* Assets.xcassets */; };
 		A8135F3F29FFB23B006C4156 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8135F3E29FFB23B006C4156 /* Preview Assets.xcassets */; };
+		A8135F482A0002A7006C4156 /* UISliderRepresentation.swift in Sources */ = {isa = PBXBuildFile; fileRef = A8135F472A0002A7006C4156 /* UISliderRepresentation.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,7 @@
 		A8135F3929FFB23A006C4156 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A8135F3B29FFB23B006C4156 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A8135F3E29FFB23B006C4156 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A8135F472A0002A7006C4156 /* UISliderRepresentation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UISliderRepresentation.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 				A8135F3929FFB23A006C4156 /* ContentView.swift */,
 				A8135F3B29FFB23B006C4156 /* Assets.xcassets */,
 				A8135F3D29FFB23B006C4156 /* Preview Content */,
+				A8135F472A0002A7006C4156 /* UISliderRepresentation.swift */,
 			);
 			path = CheckAccuracy;
 			sourceTree = "<group>";
@@ -137,6 +140,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A8135F482A0002A7006C4156 /* UISliderRepresentation.swift in Sources */,
 				A8135F3A29FFB23A006C4156 /* ContentView.swift in Sources */,
 				A8135F3829FFB23A006C4156 /* CheckAccuracyApp.swift in Sources */,
 			);
