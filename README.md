@@ -7,5 +7,4 @@
 Кнопка "Начать заново" задает новое случайное значение для бегунка слайдера и заданного значения
 В проекте SwiftUI использовать UISlider.
 
-![Гифка с Gifius ru-2](https://user-images.githubusercontent.com/121757460/235487220-f7262fea-4a14-410e-ac18-6bb5d0209c39.gif)
-
+![Гифка с Gifius ru-4](https://user-images.githubusercontent.com/121757460/235487824-f2754545-9e87-4baf-a85e-0bfec6a76356.gif)
