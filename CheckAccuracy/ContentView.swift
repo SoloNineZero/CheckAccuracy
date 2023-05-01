@@ -15,9 +15,7 @@ struct ContentView: View {
     
     var body: some View {
         VStack(spacing: 30) {
-            HStack {
-                Text("Пододвинь слайдер как можно ближе к: \(targetValue.formatted())")
-            }
+            Text("Пододвинь слайдер как можно ближе к: \(targetValue.formatted())")
             HStack {
                 Text("0")
                 UISliderRepresentation(value: $currentValue)
