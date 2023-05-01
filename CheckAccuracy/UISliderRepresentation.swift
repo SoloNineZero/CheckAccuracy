@@ -11,6 +11,8 @@ struct UISliderRepresentation: UIViewRepresentable {
     
     @Binding var value: Double
     
+    let thumbAlpha: Int
+    
     func makeUIView(context: Context) -> UISlider {
         let slider = UISlider()
         slider.minimumValue = 0
@@ -28,6 +30,7 @@ struct UISliderRepresentation: UIViewRepresentable {
     
     func updateUIView(_ uiView: UISlider, context: Context) {
         uiView.value = Float(value)
+        uiView.thumbTintColor = .red.withAlphaComponent(CGFloat(thumbAlpha) / 100)
     }
     
     func makeCoordinator() -> Coordinator {
@@ -52,6 +55,6 @@ extension UISliderRepresentation {
 
 struct UISliderRepresentation_Previews: PreviewProvider {
     static var previews: some View {
-        UISliderRepresentation(value: .constant(50))
+        UISliderRepresentation(value: .constant(50), thumbAlpha: 100)
     }
 }

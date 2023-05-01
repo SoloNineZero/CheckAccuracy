@@ -18,7 +18,7 @@ struct ContentView: View {
             Text("Пододвинь слайдер как можно ближе к: \(targetValue.formatted())")
             HStack {
                 Text("0")
-                UISliderRepresentation(value: $currentValue)
+                UISliderRepresentation(value: $currentValue, thumbAlpha: Int(computeScore()))
                 Text("100")
             }
             
